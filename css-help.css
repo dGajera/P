@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*-----vertical align center------*/
+div{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin:auto;	
+}/*-----line-height=height of div------*/
+
+
+
+/*-----background transperant overlay------*/
+.services-section {
+  background: rgba(0, 0, 0, 0.5) url("../img/3.jpg") repeat fixed 0 0 / 100% 100%;
+  height: 100% !important;
+  padding-top: 150px;
+  position: relative;
+  text-align: center;
+  position: relative;
+}
+
+.services-section::before {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 97.8vh;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 97.8vw;
+}
+/*-----media query------*/
+@media screen and (min-width:768px) and (max-width:1169px){} /*tablet view*/
+@media screen and (max-width:767px) {} /*mobile view*/
+
